@@ -1,0 +1,68 @@
+리엑트 CRA를 이용해서 프로젝트를 생성(create)
+1. 리엑트(react) 프로젝트 앱(application) 만들기(create)
+npx create-react-app just_shop
+
+2. cd just_shop 프로젝트로 경로이동
+
+3. 사스 설치하기
+  -npm i sass
+
+4. package 제이슨 파일 열고 설치파일 확인한다. 
+  package.json 
+
+5. public 폴더 열고 : 파일 정리 삭제 
+  css
+  index.html
+  img
+  js
+
+6. index.html 
+  - 헤더영역에 환경설정
+      사용언어 ko
+      파비콘 이미지스 경로 ./img
+      style 지정 <link ... >
+      제이쿼리 오픈스크립트 
+      바벨 오픈스크립트
+
+  - 바디영역에 환경설정
+      돔컨테이너 #root
+      <div id="root"></div>
+      
+      제이쿼리 스크립트 사용자 파일 타임설정 type="text/babel"
+      <script type="text/babel" src="./script/script.js"></script>
+
+7. SRC : 컴포넌트.js 인덱스.js 스타일.css 스타일scss 등 환경설정하기
+    - index.js는 리엑트에서 정해진 이름이고 반드시 필요한 파일입니다. 
+    - index.js 내부소스 정리하기
+    - 아래와 같이 남기고 나머지 모두 삭제하기
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  
+);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
+
+
+8. 컴포넌트폴더 만들기 
+    - 앱(app) 구성 모든 컴포넌트 만들기 
+    컴포넌트 폴더이름 : components 
+
+9. 컴포넌트.js 만들기
+    WarpComponents.js
+    
+      HeaderComponents.js
+      MainComponents.js
+        Section1Components.js
+        Section2Components.js
+          
+      FooterComponents.js
+      ModalComponents.js
+
+
+10. 모든컴포넌트 : 프롭스 와 상태관리 기본프롭스 모두 복사 붙여넣기

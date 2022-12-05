@@ -1,0 +1,64 @@
+깃허브 깃설정 및 커밋 & 푸쉬 & 배포 & 페이지인
+
+깃허브 사이트 
+1. 웹브라우저 열기 - 깃허브 로그인 
+2. 리파지토리 만들기 repository
+
+로컬 프로젝트 작업위치 
+3. 경로이동 (경로 확인 ls -la )
+
+4. 깃설정
+
+git init
+
+5. 깃설정 목록확인
+drwxr-xr-x 1 Administrator 197121       0 12월  5 10:20  .git/
+
+6. 깃환경설정 (git config)
+
+사용자 이름 
+사용자 이메일 
+
+git config user.name 'bhwon1'
+git config user.email 'blm2094@naver.com'
+
+화면청소
+clear
+
+확인하기
+git config user.name 
+git config user.email
+
+////////////////////////////////// 
+깃허브 원격지 리파지토리(저장소) 주소 추가 지정 origin(url)
+
+git remote add origin  https://github.com/bhwon1/react_cra_justshop.git 
+넣기
+
+원격지 리파지토리(저장소) 주소 확인하기 
+
+git remote -v / 쳐서 확인하기 
+
+origin  https://github.com/bhwon1/react_cra_justshop.git (fetch)
+origin  https://github.com/bhwon1/react_cra_justshop.git (push)
+
+주소확인 이상 없음
+
+만약에 잘못된 주소면 삭제하기
+
+git remote remove origin
+
+git remote -v / 확인하기
+
+다시 깃허브 원격지 리파지토리(저장소) 주소 추가 지정 origin(url)
+
+git remote add origin  https://github.com/bhwon1/react_cra_justshop.git 
+넣기
+
+git remote -v / 쳐서 확인하기 
+
+/////////////////////////////////////////////////////////////////////////////////
+스테이징 
+
+모든(all = . )파일 스테이징(올리기)
+git add .
